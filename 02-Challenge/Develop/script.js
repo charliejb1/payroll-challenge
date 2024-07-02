@@ -1,6 +1,6 @@
 
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-
+// Function for creating an empty array and prompting user for employee data
 const collectEmployees = function() {
   let employees = [];
 
@@ -22,9 +22,8 @@ while (addEmployee) {
   
   addEmployee = confirm("Do you want to add another employee?");
 }
-// 
 return employees
-// getRandomEmployee(employees)++
+
 }
 
 // Display the average salary
@@ -36,10 +35,10 @@ console.log("The average salary of the employees is " + averageSalary)
 
 }
 
-// Select a random employee
+// Selectinf a random employee
 const getRandomEmployee = function(employeesArray) {
   console.log(employeesArray)
-  // TODO: Select and display a random employee
+
   let index = Math.floor(Math.random() * employeesArray.length);
       const computerChoice = employeesArray[index];
       console.log(employeesArray.length)
