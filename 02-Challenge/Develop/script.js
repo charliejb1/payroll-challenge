@@ -14,7 +14,7 @@ while (addEmployee) {
   let employee = {
     firstName: firstName,
     lastName: lastName,
-    salary: salary
+    salary: Number(salary)
   };
 
   employees.push(employee);
@@ -29,9 +29,11 @@ return employees
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  
-  
- 
+let totalSalary = 0
+employeesArray.forEach(employee => {totalSalary += employee.salary});
+let averageSalary = totalSalary / employeesArray.length
+console.log("The average salary of the employees is " + averageSalary)
+
 }
 
 // Select a random employee
